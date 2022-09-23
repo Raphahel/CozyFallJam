@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Potion",
+"language": "GDScript",
+"path": "res://Scripts/potion.gd"
+} ]
+_global_script_class_icons={
+"Potion": ""
+}
+
 [application]
 
 config/name="FallJam"
