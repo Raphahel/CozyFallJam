@@ -20,6 +20,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 0.0 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("OptionButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 128, 512 ) ]
+}
 
 [sub_resource type="Animation" id=8]
 resource_name = "bouton tombe"
@@ -32,10 +44,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.001, 0.1, 1, 2, 3, 3.9, 5 ),
-"transitions": PoolRealArray( 1.56, 1.56, 1.56, 1.56, 1.56, 1.56, 1.56 ),
+"times": PoolRealArray( 0.1, 1, 2, 3, 4, 5 ),
+"transitions": PoolRealArray( 1.56, 1.56, 1.56, 1.56, 1.56, 1.56 ),
 "update": 0,
-"values": [ 0.0, 0.0, 50.0, -30.0, 50.0, -10.0, 50.0 ]
+"values": [ 0.0, 50.0, -10.0, 50.0, -10.0, 50.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("OptionButton:rect_position")
@@ -44,10 +56,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.001, 0.1, 1, 2, 3, 3.9, 5 ),
-"transitions": PoolRealArray( 1.56, 1.56, 1.56, 1.56, 1.56, 1.56, 1.56, 1.56 ),
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5 ),
+"transitions": PoolRealArray( 1.56, 1.56, 1.56, 1.56, 1.56, 1.56 ),
 "update": 0,
-"values": [ Vector2( 66, 274 ), Vector2( 64, 274 ), Vector2( 64, 274 ), Vector2( 10, 346 ), Vector2( 140, 426 ), Vector2( -30, 516 ), Vector2( 240, 616 ), Vector2( -30, 706 ) ]
+"values": [ Vector2( 128, 512 ), Vector2( 10, 700 ), Vector2( 400, 700 ), Vector2( -30, 900 ), Vector2( 240, 1120 ), Vector2( -30, 1400 ) ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -74,7 +86,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 64, 336 ) ]
+"values": [ Vector2( 128, 704 ) ]
 }
 
 [sub_resource type="Animation" id=10]
@@ -103,7 +115,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
 "transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
 "update": 0,
-"values": [ Vector2( 64, 336 ), Vector2( 10, 400 ), Vector2( 140, 450 ), Vector2( -30, 550 ), Vector2( 240, 600 ), Vector2( -30, 640 ) ]
+"values": [ Vector2( 128, 704 ), Vector2( 10, 800 ), Vector2( 140, 950 ), Vector2( -30, 1100 ), Vector2( 240, 1260 ), Vector2( -30, 1400 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -130,7 +142,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 64, 208 ) ]
+"values": [ Vector2( 128, 320 ) ]
 }
 
 [sub_resource type="Animation" id=1]
@@ -159,7 +171,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
 "transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
 "update": 0,
-"values": [ Vector2( 64, 208 ), Vector2( 10, 280 ), Vector2( 140, 360 ), Vector2( -30, 450 ), Vector2( 240, 550 ), Vector2( -30, 640 ) ]
+"values": [ Vector2( 128, 320 ), Vector2( 10, 500 ), Vector2( 140, 700 ), Vector2( -30, 890 ), Vector2( 240, 1100 ), Vector2( -30, 1400 ) ]
 }
 
 [node name="Control" type="Control"]
@@ -175,7 +187,7 @@ anchor_bottom = 1.0
 margin_left = -1.0
 margin_top = 2.0
 margin_right = -2.0
-margin_bottom = -476.0
+margin_bottom = -811.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "Anxious Potion Maker"
@@ -183,15 +195,15 @@ align = 1
 valign = 1
 
 [node name="OptionButton" type="Button" parent="."]
-anchor_left = 0.064
-anchor_top = 0.457
-anchor_right = 0.172
-anchor_bottom = 0.533
-margin_left = 0.463997
-margin_top = -0.199982
-margin_right = -0.128006
-margin_bottom = 2.20004
-rect_pivot_offset = Vector2( 50, 0 )
+anchor_left = 0.067
+anchor_top = 0.474
+anchor_right = 0.201
+anchor_bottom = 0.583
+margin_left = -0.639999
+margin_top = 0.0799561
+margin_right = 0.079071
+margin_bottom = 0.359375
+rect_pivot_offset = Vector2( 100, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Option"
 script = ExtResource( 5 )
@@ -202,13 +214,14 @@ anims/RESET = SubResource( 7 )
 "anims/bouton tombe" = SubResource( 8 )
 
 [node name="CreditsButton" type="Button" parent="."]
-anchor_left = 0.062
-anchor_top = 0.56
-anchor_right = 0.172
-anchor_bottom = 0.643
-margin_left = 0.512001
-margin_right = -0.128204
-margin_bottom = -1.8002
+anchor_left = 0.067
+anchor_top = 0.652
+anchor_right = 0.2
+anchor_bottom = 0.763
+margin_left = -0.639999
+margin_top = -0.160034
+margin_right = -0.000274658
+margin_bottom = -0.0396729
 rect_pivot_offset = Vector2( 50, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Credits"
@@ -220,26 +233,26 @@ anims/RESET = SubResource( 9 )
 "anims/bouton tombe" = SubResource( 10 )
 
 [node name="QuitButton" type="Button" parent="."]
-anchor_left = 0.062
-anchor_top = 0.84
-anchor_right = 0.148
-anchor_bottom = 0.907
-margin_left = 0.511997
-margin_top = -3.05176e-05
-margin_right = 0.447998
-margin_bottom = 2.79993
+anchor_left = 0.067
+anchor_top = 0.889
+anchor_right = 0.162
+anchor_bottom = 0.969
+margin_left = -0.639999
+margin_top = -0.120056
+margin_right = 0.959991
+margin_bottom = -0.52002
 custom_fonts/font = ExtResource( 1 )
 text = "Quit"
 
 [node name="PlayButton" type="Button" parent="."]
-anchor_left = 0.062
-anchor_top = 0.347
-anchor_right = 0.172
-anchor_bottom = 0.427
-margin_left = 0.512001
-margin_top = -0.199997
-margin_right = -0.123611
-margin_bottom = -0.203186
+anchor_left = 0.067
+anchor_top = 0.296
+anchor_right = 0.203
+anchor_bottom = 0.41
+margin_left = -0.639999
+margin_top = 0.320007
+margin_right = -0.76001
+margin_bottom = 0.200958
 rect_pivot_offset = Vector2( 50, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Play"
