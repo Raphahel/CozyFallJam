@@ -1,8 +1,5 @@
 extends Control
 
-
-
-
 var prix = 0
 var effet = ""
 var nom = "" 
@@ -17,5 +14,5 @@ func _init(var e,var n, var p, var sup):
 
 func concatenation (var effet): 
 	var res
-	res = "Potion de "+ effet
+	res = "Potion of "+ effet
 	return res
