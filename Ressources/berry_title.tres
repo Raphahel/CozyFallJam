@@ -3,6 +3,6 @@
 [ext_resource path="res://Ressources/Berry Rotunda.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 43
+size = 65
 extra_spacing_bottom = -12
 font_data = ExtResource( 1 )
