@@ -4,4 +4,4 @@
 
 [node name="Ingredients" instance=ExtResource( 1 )]
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="Sprite" type="Sprite" parent="." index="0"]
