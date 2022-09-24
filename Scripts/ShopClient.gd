@@ -1,15 +1,18 @@
 extends Node
 
+const NB_SPRITE = 5
 var first_name
 var dialogue
 var potion
 var price_modif
+var sprite = 1
 
-func _init(var fn, var diag,var pot):
+"""func _init(var fn, var diag,var pot):
 	first_name = fn
 	dialogue = diag
 	potion = pot
 	price_modif = (randi() % 125 + 75)/100
+	sprite = randi() % NB_SPRITE + 1"""
 
 var liste_dialogues = []
 
@@ -28,4 +31,10 @@ var liste_dial_hydration = ["I spend my time forgetting to drink and I ended up 
 var liste_dial_forgetfulness = ["I have to forget bubulle's death... Please give me a potion of forgetfulness?", "My horse was attacked by a mouse, he is useless now, can I have a potion of forgetfulness to make him forget ?", "This night, I dreamt about people with sausages instead of fingers"]
 
 var liste_dial_night_vision = ["I want to go hunt a platypus, and I need a night vision potion","I have to infiltrate myself in my neighbour's domain to kill bubulle in his pond. Could I have a night vision potion please ?","I want to watch the merchant nearby, but at night. Can I have a night vision potion"]
+
+func _ready():
+	var sprite_name = "SpriteClient" + str(sprite)
+	print(sprite_name)
+	get_node(sprite_name).show()
+	
 
