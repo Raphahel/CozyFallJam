@@ -1,7 +1,238 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Ressources/MainMenuFont.tres" type="DynamicFont" id=1]
-[ext_resource path="res://Ressources/MainButton.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Ressources/Berry.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Ressources/berry_title.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/PlayButton.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/CreditsButton.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/OptionButton.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayButton:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PlayButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 64, 208 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../OptionButton:rect_rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../OptionButton:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 66, 274 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("OptionButton:rect_rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "bouton tombe"
+length = 5.0
+step = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("OptionButton:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.001, 0.1, 1, 2, 3, 3.9, 5 ),
+"transitions": PoolRealArray( 1.56, 1.56, 1.56, 1.56, 1.56, 1.56, 1.56 ),
+"update": 0,
+"values": [ 0.0, 0.0, 50.0, -30.0, 50.0, -10.0, 50.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("OptionButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.001, 0.1, 1, 2, 3, 3.9, 5 ),
+"transitions": PoolRealArray( 1.56, 1.56, 1.56, 1.56, 1.56, 1.56, 1.56, 1.56 ),
+"update": 0,
+"values": [ Vector2( 66, 274 ), Vector2( 64, 274 ), Vector2( 64, 274 ), Vector2( 10, 346 ), Vector2( 140, 426 ), Vector2( -30, 516 ), Vector2( 240, 616 ), Vector2( -30, 706 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayButton:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PlayButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 64, 208 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CreditsButton:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 64, 336 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CreditsButton:rect_rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "bouton tombe"
+length = 5.0
+step = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CreditsButton:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
+"transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
+"update": 0,
+"values": [ 0.0, 50.0, -30.0, 50.0, -10.0, 50.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CreditsButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
+"transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
+"update": 0,
+"values": [ Vector2( 64, 208 ), Vector2( 10, 280 ), Vector2( 140, 360 ), Vector2( -30, 450 ), Vector2( 240, 550 ), Vector2( -30, 640 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayButton:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PlayButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 64, 208 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "bouton tombe"
+length = 5.0
+step = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayButton:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
+"transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
+"update": 0,
+"values": [ 0.0, 50.0, -30.0, 50.0, -10.0, 50.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PlayButton:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
+"transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
+"update": 0,
+"values": [ Vector2( 64, 208 ), Vector2( 10, 280 ), Vector2( 140, 360 ), Vector2( -30, 450 ), Vector2( 240, 550 ), Vector2( -30, 640 ) ]
+}
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -18,56 +249,79 @@ margin_top = 2.0
 margin_right = -2.0
 margin_bottom = -476.0
 size_flags_horizontal = 3
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 text = "Anxious Potion Maker"
 align = 1
 valign = 1
 
 [node name="OptionButton" type="Button" parent="."]
 anchor_left = 0.064
-anchor_top = 0.47
-anchor_right = 0.15
-anchor_bottom = 0.542
+anchor_top = 0.457
+anchor_right = 0.172
+anchor_bottom = 0.533
 margin_left = 0.463997
-margin_top = -3.05176e-05
-margin_right = 0.399994
-margin_bottom = -0.200043
-custom_fonts/font = ExtResource( 2 )
+margin_top = -2.20001
+margin_right = -0.128006
+margin_bottom = 0.199982
+rect_pivot_offset = Vector2( 50, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Option"
+script = ExtResource( 5 )
 
-[node name="PlayButton" type="Button" parent="."]
-anchor_left = 0.064
-anchor_top = 0.347
-anchor_right = 0.15
-anchor_bottom = 0.418
-margin_left = 0.463997
-margin_top = -0.199997
-margin_right = 0.399994
-margin_bottom = 0.199997
-custom_fonts/font = ExtResource( 2 )
-text = "Play"
+[node name="OptionsFall" type="AnimationPlayer" parent="OptionButton"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 7 )
+"anims/bouton tombe" = SubResource( 8 )
 
 [node name="CreditsButton" type="Button" parent="."]
-anchor_left = 0.064
-anchor_top = 0.572
-anchor_right = 0.15
+anchor_left = 0.062
+anchor_top = 0.56
+anchor_right = 0.172
 anchor_bottom = 0.643
-margin_left = 0.463997
-margin_top = -0.200012
-margin_right = 0.399994
-margin_bottom = 0.199982
+margin_left = 0.511997
+margin_right = -0.127884
+margin_bottom = -1.80032
 rect_pivot_offset = Vector2( -434, -243 )
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 1 )
 text = "Credits"
+script = ExtResource( 4 )
+
+[node name="CreditsFall" type="AnimationPlayer" parent="CreditsButton"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 5 )
+"anims/bouton tombe" = SubResource( 6 )
 
 [node name="QuitButton" type="Button" parent="."]
-anchor_left = 0.064
-anchor_top = 0.708
-anchor_right = 0.15
-anchor_bottom = 0.78
-margin_left = 7.464
-margin_top = 2.20001
-margin_right = 7.39999
-margin_bottom = 1.99997
-custom_fonts/font = ExtResource( 2 )
+anchor_left = 0.062
+anchor_top = 0.84
+anchor_right = 0.148
+anchor_bottom = 0.907
+margin_left = 0.511997
+margin_top = -3.05176e-05
+margin_right = 0.447998
+margin_bottom = 2.79993
+custom_fonts/font = ExtResource( 1 )
 text = "Quit"
+
+[node name="PlayButton" type="Button" parent="."]
+anchor_left = 0.062
+anchor_top = 0.347
+anchor_right = 0.172
+anchor_bottom = 0.427
+margin_left = 0.511997
+margin_top = -0.199997
+margin_right = -0.12355
+margin_bottom = -0.202637
+rect_pivot_offset = Vector2( 50, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Play"
+script = ExtResource( 3 )
+
+[node name="ButtonFall" type="AnimationPlayer" parent="PlayButton"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 2 )
+"anims/bouton tombe" = SubResource( 1 )
+
+[connection signal="pressed" from="OptionButton" to="OptionButton" method="_on_OptionButton_pressed"]
+[connection signal="pressed" from="CreditsButton" to="OptionButton" method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]
