@@ -4,6 +4,12 @@ extends Node
 var money = 0
 
 
+var anxietyLevel = 0
+
+
+const maxAnxietyLevel := 100
+
+
 enum Effects {
 	HEALTH,
 	POISON,
@@ -28,19 +34,19 @@ var ingredient_effects = {
 	"Bubblegum Butterfly": ["strength", "sommeil"],
 	"Nettle":              ["health", "hydration"],
 	"Blueberry":           ["health", "growth"],
-	"Raspberry":           ["poison", "night vision"]
+	"Raspberry":           ["poison", "night vision"],
 }
 
 
 var Prices = [
-	10,
-	20,
-	30,
-	40,
-	50,
-	60,
-	70,
-	80
+	10,  # Health
+	20,  # Poison
+	30,  # Strength
+	40,  # Growth
+	50,  # Sleep
+	60,  # Forgetfulness
+	70,  # Night vision
+	80,   # Hydration
 ]
 
 
@@ -61,5 +67,5 @@ var inventory = {
 	"Potion of Sleep":         0,
 	"Potion of Forgetfulness": 0,
 	"Potion of Night Vision":  0,
-	"Potion of Hydration":     0
+	"Potion of Hydration":     0,
 }
