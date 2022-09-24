@@ -1,4 +1,6 @@
-var money
+extends Node
+
+var money = 0
 
 enum Effects {
 	HEALTH,
