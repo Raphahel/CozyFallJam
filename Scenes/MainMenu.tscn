@@ -9,60 +9,12 @@
 [sub_resource type="Animation" id=7]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("PlayButton:rect_rotation")
+tracks/0/path = NodePath("OptionButton:rect_rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PlayButton:rect_position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 64, 208 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("../OptionButton:rect_rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("../OptionButton:rect_position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 66, 274 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("OptionButton:rect_rotation")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -98,10 +50,10 @@ tracks/1/keys = {
 "values": [ Vector2( 66, 274 ), Vector2( 64, 274 ), Vector2( 64, 274 ), Vector2( 10, 346 ), Vector2( 140, 426 ), Vector2( -30, 516 ), Vector2( 240, 616 ), Vector2( -30, 706 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=9]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("PlayButton:rect_rotation")
+tracks/0/path = NodePath("CreditsButton:rect_rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -113,7 +65,7 @@ tracks/0/keys = {
 "values": [ 0.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("PlayButton:rect_position")
+tracks/1/path = NodePath("CreditsButton:rect_position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -122,34 +74,10 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 64, 208 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CreditsButton:rect_position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
 "values": [ Vector2( 64, 336 ) ]
 }
-tracks/3/type = "value"
-tracks/3/path = NodePath("CreditsButton:rect_rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=10]
 resource_name = "bouton tombe"
 length = 5.0
 step = 2.0
@@ -175,7 +103,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0.1, 1, 2, 3, 3.9, 5 ),
 "transitions": PoolRealArray( 1.56917, 1.56917, 1.56917, 1.56917, 1.56917, 1.56 ),
 "update": 0,
-"values": [ Vector2( 64, 208 ), Vector2( 10, 280 ), Vector2( 140, 360 ), Vector2( -30, 450 ), Vector2( 240, 550 ), Vector2( -30, 640 ) ]
+"values": [ Vector2( 64, 336 ), Vector2( 10, 400 ), Vector2( 140, 450 ), Vector2( -30, 550 ), Vector2( 240, 600 ), Vector2( -30, 640 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -260,9 +188,9 @@ anchor_top = 0.457
 anchor_right = 0.172
 anchor_bottom = 0.533
 margin_left = 0.463997
-margin_top = -2.20001
+margin_top = -0.199982
 margin_right = -0.128006
-margin_bottom = 0.199982
+margin_bottom = 2.20004
 rect_pivot_offset = Vector2( 50, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Option"
@@ -278,18 +206,18 @@ anchor_left = 0.062
 anchor_top = 0.56
 anchor_right = 0.172
 anchor_bottom = 0.643
-margin_left = 0.511997
-margin_right = -0.127884
-margin_bottom = -1.80032
-rect_pivot_offset = Vector2( -434, -243 )
+margin_left = 0.512001
+margin_right = -0.128204
+margin_bottom = -1.8002
+rect_pivot_offset = Vector2( 50, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Credits"
 script = ExtResource( 4 )
 
 [node name="CreditsFall" type="AnimationPlayer" parent="CreditsButton"]
 root_node = NodePath("../..")
-anims/RESET = SubResource( 5 )
-"anims/bouton tombe" = SubResource( 6 )
+anims/RESET = SubResource( 9 )
+"anims/bouton tombe" = SubResource( 10 )
 
 [node name="QuitButton" type="Button" parent="."]
 anchor_left = 0.062
@@ -308,10 +236,10 @@ anchor_left = 0.062
 anchor_top = 0.347
 anchor_right = 0.172
 anchor_bottom = 0.427
-margin_left = 0.511997
+margin_left = 0.512001
 margin_top = -0.199997
-margin_right = -0.12355
-margin_bottom = -0.202637
+margin_right = -0.123611
+margin_bottom = -0.203186
 rect_pivot_offset = Vector2( 50, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Play"
@@ -323,5 +251,5 @@ anims/RESET = SubResource( 2 )
 "anims/bouton tombe" = SubResource( 1 )
 
 [connection signal="pressed" from="OptionButton" to="OptionButton" method="_on_OptionButton_pressed"]
-[connection signal="pressed" from="CreditsButton" to="OptionButton" method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="CreditsButton" to="CreditsButton" method="_on_CreditsButton_pressed"]
 [connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]
