@@ -13,7 +13,20 @@ enum Effects {
 	HYDRATION
 }
 
-var inventaire = {
+
+var Prices = [
+	10,
+	20,
+	30,
+	40,
+	50,
+	60,
+	70,
+	80
+]
+
+
+var inventory = {
 	"Blue Mushroom": 0,
 	"Red Mushroom": 0,
 	"Green Mushroom": 0,
