@@ -1,19 +1,32 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/IngredientUI.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Pickable.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Image/champi_bleu.png" type="Texture" id=3]
 [ext_resource path="res://Image/champi_vert.png" type="Texture" id=4]
+[ext_resource path="res://Ressources/PressStart2P-Regular.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 11.0
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 5 )
 
 [node name="Ingredient" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
 ingredient_name = "Blue Mushroom"
 texture = ExtResource( 3 )
 
-[node name="Texture" parent="." index="0"]
+[node name="Area2D" type="Area2D" parent="." index="0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="Texture" parent="." index="1"]
 margin_left = -10.0
 margin_top = -5.0
 margin_right = 10.0
@@ -32,17 +45,12 @@ margin_right = 10.0
 margin_bottom = 6.061
 expand = true
 
-[node name="Area2D" type="Area2D" parent="." index="1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
-visible = false
-shape = SubResource( 1 )
-
 [node name="Quantity" type="Label" parent="." index="2"]
-margin_left = -5.0
-margin_top = 6.0
-margin_right = 29.0
-margin_bottom = 20.0
+margin_left = -3.0
+margin_top = 4.0
+margin_right = 20.0
+margin_bottom = 51.0
 rect_scale = Vector2( 0.3, 0.3 )
+custom_fonts/font = SubResource( 2 )
 text = "5"
 align = 1
