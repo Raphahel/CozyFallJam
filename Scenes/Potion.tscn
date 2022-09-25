@@ -8,6 +8,7 @@
 rect_scale = Vector2( 0.25, 0.25 )
 script = ExtResource( 2 )
 texture = null
+potion = 0
 
 [node name="Texture" parent="." index="0"]
 margin_left = -140.0
@@ -26,3 +27,13 @@ margin_top = -415.776
 margin_right = 181.6
 margin_bottom = 455.224
 texture = ExtResource( 3 )
+
+[node name="Quantity" type="Label" parent="." index="1"]
+margin_left = -188.0
+margin_top = 412.0
+margin_right = -113.0
+margin_bottom = 443.0
+rect_scale = Vector2( 5, 5 )
+text = "5
+"
+align = 1
