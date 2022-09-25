@@ -26,7 +26,11 @@ var SPRITEINGR = {
 func _ready():
 	effects = globalVariable.ingredient_effects[ingredient_name]
 	$Texture.texture = texture
+	$Texture/Modulate.texture = texture
 
+func _process(delta):
+	if Input.is_action_just_released("left_click"):
+		$Texture/Modulate.visible = false
 
 func update_var(var name):
 	effects = globalVariable.ingredient_effects[name]
@@ -41,8 +45,6 @@ func get_drag_data(position):
 	var drag_preview = DRAGPREVIEWING.instance()
 	drag_preview.texture = $Texture.texture
 	$Texture/Modulate.visible = true
-
-	drag_preview.scale = Vector2(0.5, 0.5)
-	
+	drag_preview.scale = Vector2(0.01,0.01)
 	add_child(drag_preview)
 	return data

@@ -28,7 +28,6 @@ func _ready():
 	randomize()
 	itemWaterfall()
 
-
 func itemWaterfall():
 	while true:
 		var waiting_time = rand_range(0, 3)

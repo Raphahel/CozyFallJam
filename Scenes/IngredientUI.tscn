@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/IngredientUI.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Pickable.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Image/champi_bleu.png" type="Texture" id=3]
+[ext_resource path="res://Image/champi_vert.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 11.0
@@ -19,6 +20,7 @@ margin_right = 10.0
 margin_bottom = 6.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
+texture = ExtResource( 4 )
 expand = true
 
 [node name="Modulate" parent="Texture" index="0"]

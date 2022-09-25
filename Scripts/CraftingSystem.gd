@@ -37,7 +37,9 @@ func drop_data(position, data):
 func _process(delta):
 	namesAlreadyPlaced = [TargetData1["Name"], TargetData2["Name"]]
 	if(Input.action_press("left_click") && TargetData1["Name"] != "none" && TargetData2["Name"] != "none"):
-		var outputPotion = get_blend_effects(TargetData1["Effects"], TargetData2["Effects"])
+		var outputPotion = get_blend_effects(TargetData1["Effects"], TargetData2["Effects"])[0]
+		if(outputPotion != "bizzare"):
+			globalVariable.inventory[outputPotion] += 1
 		isSlot1used = false
 
 
