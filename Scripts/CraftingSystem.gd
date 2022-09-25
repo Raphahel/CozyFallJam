@@ -53,3 +53,7 @@ func get_blend_effects(var eff1, var eff2):
 		return "bizarre"
 	
 	return effects_result[0]
+
+
+
+
