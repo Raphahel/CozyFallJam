@@ -30,9 +30,9 @@ texture = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CraftingSystem" type="Control" parent="."]
-margin_left = 834.0
+margin_left = 832.0
 margin_top = 373.0
-margin_right = 1148.0
+margin_right = 1146.0
 margin_bottom = 670.0
 script = ExtResource( 7 )
 
@@ -188,3 +188,5 @@ margin_bottom = 855.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Nettle"
 texture = ExtResource( 16 )
+
+[connection signal="gui_input" from="CraftingSystem" to="CraftingSystem" method="_on_CraftingSystem_gui_input"]
