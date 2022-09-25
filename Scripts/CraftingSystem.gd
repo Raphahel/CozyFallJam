@@ -37,8 +37,6 @@ func drop_data(position, data):
 
 func _process(delta):
 	namesAlreadyPlaced = [TargetData1["Name"], TargetData2["Name"]]
-	
-
 
 
 func get_blend_effects(var eff1, var eff2):
@@ -50,14 +48,27 @@ func get_blend_effects(var eff1, var eff2):
 				effects_result.append(effect2)
 	
 	if len(effects_result) != 1:
-		return "bizarre"
+		return "Failed"
 	
 	return effects_result[0]
 
-
-
-
-
-
-func _on_CraftingSystem_gui_input(event):
-	pass # Replace with function body.
+func _on_MixButton_button_down():
+	if(TargetData1["Name"] != "" && TargetData2["Name"] != ""):
+		var outputPotion = get_blend_effects(TargetData1["Effects"], TargetData2["Effects"])
+		if(outputPotion != "Failed"):
+			outputPotion = "Potion of " + outputPotion
+			globalVariable.inventory[outputPotion] += 1
+		else:
+			outputPotion = "Failed Potion"
+		$PotionOutput.text = outputPotion
+		$PotionOutput/DispTimer.start(2.5)
+		isSlot1used = false
+		isSlot2used = false
+		TargetData1["Name"] = ""
+		TargetData1["Effects"] = []
+		TargetData1["Texture"] = null
+		$slot1/Texture.texture = TargetData1["Texture"]
+		TargetData2["Name"] = ""
+		TargetData2["Effects"] = []
+		TargetData2["Texture"] = null
+		$slot2/Texture.texture = TargetData1["Texture"]
