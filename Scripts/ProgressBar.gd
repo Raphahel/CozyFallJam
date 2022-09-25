@@ -6,4 +6,15 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	$ProgressBar.value +=1
+	if globalVariable.player_is_in_walk_scene:
+		if $ProgressBar.value == 0:
+			get_tree().change_scene("res://Scenes/CraftingScreen.tscn")
+			globalVariable.player_is_in_walk_scene = false
+		else:
+			$ProgressBar.value -= 1
+	else:
+		if $ProgressBar.value == 0:
+			get_tree().change_scene("res://Scenes/WalkScene.tscn")
+			globalVariable.player_is_in_walk_scene = true
+		else:
+			$ProgressBar.value += 1

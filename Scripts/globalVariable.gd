@@ -10,6 +10,9 @@ var anxietyLevel = 0
 const maxAnxietyLevel := 100
 
 
+var player_is_in_walk_scene = true
+
+
 const walkVelocity = 200
 
 
