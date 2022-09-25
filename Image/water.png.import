@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/potion_croissance.png-45ba3c8af7cf65ec4777b573688ccf32.stex"
+path="res://.import/water.png-d89a9a78e1c331296e34a2576191d454.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Image/potion_croissance.png"
-dest_files=[ "res://.import/potion_croissance.png-45ba3c8af7cf65ec4777b573688ccf32.stex" ]
+source_file="res://Image/water.png"
+dest_files=[ "res://.import/water.png-d89a9a78e1c331296e34a2576191d454.stex" ]
 
 [params]
 
