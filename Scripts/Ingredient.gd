@@ -6,7 +6,6 @@ var effects = []
 
 
 func _ready():
-	print(ingredient_name)
 	effects = globalVariable.ingredient_effects[ingredient_name]
 
 func get_drag_data(position):
@@ -14,6 +13,8 @@ func get_drag_data(position):
 	data["Name"] = ingredient_name
 	data["Effects"] = effects
 	data["Texture"] = $Texture.texture
+	
+	.get_drag_data(position)
 	return data
 
 

@@ -2,6 +2,7 @@ extends Control
 
 var TargetData = {
 	"Name" : "none",
+	"Effects" : [],
 	"Texture" : Texture
 }
 
@@ -11,5 +12,8 @@ func can_drop_data(position, data):
 
 func drop_data(position, data):
 	TargetData["Name"] = data["Name"]
+	TargetData["Effects"] = data["Effects"]
 	TargetData["Texture"] = data["Texture"]
 	$Texture.texture = TargetData["Texture"]
+
+
