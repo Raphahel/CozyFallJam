@@ -2,7 +2,7 @@ extends Control
 
 #Classe générale permet de donner l'impresseon de déplacer l'objet. Ne vérifie rien d'autre devra être adapter par objet
 
-var data
+
 const DRAGPREVIEW = preload("res://Scenes/DragPreview.tscn")
 
 func _ready():
