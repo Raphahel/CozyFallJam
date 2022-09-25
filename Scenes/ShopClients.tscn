@@ -40,6 +40,7 @@ position = Vector2( 834, 496 )
 texture = ExtResource( 4 )
 
 [node name="SpriteClient5" type="Sprite" parent="."]
+visible = false
 position = Vector2( 815, 555 )
 scale = Vector2( 0.827344, 0.748611 )
 texture = ExtResource( 5 )
