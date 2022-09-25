@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/festival.mp3-ae922feb7826fae220afa195c3b82976.mp3str"
+
+[deps]
+
+source_file="res://Audio/festival.mp3"
+dest_files=[ "res://.import/festival.mp3-ae922feb7826fae220afa195c3b82976.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

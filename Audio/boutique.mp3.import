@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boutique.mp3-4d51fd99226466b044051dc32f24f382.mp3str"
+
+[deps]
+
+source_file="res://Audio/boutique.mp3"
+dest_files=[ "res://.import/boutique.mp3-4d51fd99226466b044051dc32f24f382.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/potion making.mp3-6b43ad88cc6d45820f48dbf12b5b6502.mp3str"
+
+[deps]
+
+source_file="res://Audio/potion making.mp3"
+dest_files=[ "res://.import/potion making.mp3-6b43ad88cc6d45820f48dbf12b5b6502.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
