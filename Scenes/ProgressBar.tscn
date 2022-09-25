@@ -13,12 +13,13 @@ script = ExtResource( 1 )
 autostart = true
 
 [node name="ProgressBar" type="ProgressBar" parent="ProgressBAr"]
-margin_right = 254.0
-margin_bottom = 35.0
+margin_left = 3.0
+margin_top = 139.0
+margin_right = 257.0
+margin_bottom = 174.0
 rect_scale = Vector2( 2, 2 )
 
 [node name="DecorVente" type="Sprite" parent="."]
-visible = false
 show_behind_parent = true
 position = Vector2( 965.78, 539.06 )
 scale = Vector2( 0.752, 0.744 )

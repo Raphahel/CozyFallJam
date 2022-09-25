@@ -24,7 +24,11 @@ func update_var(var name):
 
 
 func _on_Area2D_body_entered(body):
-	print(body.name)
-	if body.name == "CharacterChat":
+	pass
+
+
+func _on_Area2D_area_entered(area):
+	print(area.name)
+	if area.name == "InteractionChat":
 		globalVariable.inventory[self.ingredient_name] += 1
 		queue_free()

@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const PLAYER_SPEED = 500
+const PLAYER_SPEED = 280
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

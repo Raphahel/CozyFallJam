@@ -108,4 +108,3 @@ volume_db = -17.479
 [connection signal="pressed" from="CanvasLayer/NinePatchRect/YesButton" to="." method="_on_YesButton_pressed"]
 [connection signal="pressed" from="CanvasLayer/NinePatchRect/NoButton" to="." method="_on_NoButton_pressed"]
 [connection signal="pressed" from="CanvasLayer/NinePatchRect/ByeButton" to="." method="_on_ByeButton_pressed"]
-[connection signal="finished" from="Bell" to="." method="_on_Bell_finished"]

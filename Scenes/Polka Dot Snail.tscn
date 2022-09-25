@@ -4,9 +4,11 @@
 [ext_resource path="res://Scripts/ingredientsWalk.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 164, 160 )
+extents = Vector2( 629.778, 555 )
 
 [node name="KinematicBody2D" type="Node2D"]
+position = Vector2( 16, 19 )
+scale = Vector2( 0.4, 0.4 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -15,6 +17,11 @@ scale = Vector2( 0.383333, 0.383333 )
 texture = ExtResource( 1 )
 offset = Vector2( -461.739, 1035.65 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -52, -55 )
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -36.6666, -53.3334 )
+scale = Vector2( 0.3, 0.3 )
 shape = SubResource( 1 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
