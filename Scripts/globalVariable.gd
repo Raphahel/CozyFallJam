@@ -24,6 +24,20 @@ enum Effects {
 	HYDRATION
 }
 
+const SPRITEINGR = {
+	"Blue Mushroom":      "res://Image/champi_bleu.png",
+	"Red Mushroom":        "res://Image/champi_bleu.png",
+	"Green Mushroom":      "res://Image/champi_vert.png",
+	"Snail" :              "res://Image/escargot_marron.png",
+	"Polka Dot Snail":     "res://Image/escargot_pois.png",
+	"Kilted Snail":        "res://Image/escargot_kilt.png	",
+	"Blood Butterfly":     "res://Image/papillon_rouge.png",
+	"Blue Morpho":         "res://Image/papillon_bleu.png",
+	"Bubblegum Butterfly": "res://Image/papillon_rose.png",
+	"Nettle":              "res://Image/ortie.png",
+	"Blueberry":           "res://Image/myrtilles.png",
+	"Raspberry":           "res://Image/framboises.png",
+}
 
 var ingredient_effects = {
 	"Blue Mushroom":       ["growth", "night vision"],

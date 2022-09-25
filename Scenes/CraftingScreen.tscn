@@ -8,7 +8,7 @@
 [ext_resource path="res://Scripts/CraftingSlot.gd" type="Script" id=6]
 [ext_resource path="res://Scripts/CraftingSystem.gd" type="Script" id=7]
 [ext_resource path="res://Image/champi_bleu.png" type="Texture" id=8]
-[ext_resource path="res://Image/champi_rouge.png" type="Texture" id=9]
+[ext_resource path="res://Image/potion_poison.png" type="Texture" id=9]
 
 [node name="CraftingScreen" type="Control"]
 script = ExtResource( 3 )
@@ -26,7 +26,7 @@ margin_left = 1769.0
 margin_top = 505.0
 margin_right = 1769.0
 margin_bottom = 505.0
-rect_scale = Vector2( 2, 2 )
+rect_scale = Vector2( 4, 4 )
 texture = ExtResource( 8 )
 
 [node name="Red Mushroom" parent="." instance=ExtResource( 4 )]
@@ -34,7 +34,7 @@ margin_left = 1690.0
 margin_top = 505.0
 margin_right = 1690.0
 margin_bottom = 505.0
-rect_scale = Vector2( 2, 2 )
+rect_scale = Vector2( 4, 4 )
 ingredient_name = "Red Mushroom"
 texture = ExtResource( 9 )
 

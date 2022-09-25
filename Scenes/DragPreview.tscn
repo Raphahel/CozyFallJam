@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/DragPreview.gd" type="Script" id=1]
+[ext_resource path="res://Image/potion_poison.png" type="Texture" id=2]
 
 [node name="Sprite" type="Sprite"]
 position = Vector2( 2, 18 )
 scale = Vector2( 0.272222, 0.272222 )
+texture = ExtResource( 2 )
 script = ExtResource( 1 )

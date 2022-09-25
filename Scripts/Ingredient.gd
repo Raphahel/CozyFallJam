@@ -1,7 +1,7 @@
 extends "res://Scripts/Pickable.gd"
 
 export var ingredient_name : String = "Blue Mushroom"
-export var texture : Texture
+export var texture : Texture = null
 var effects = []
 #var scarcity : int
 const DRAGPREVIEWING = preload("res://Scenes/DragPreviewIngredients.tscn")
@@ -10,6 +10,10 @@ const DRAGPREVIEWING = preload("res://Scenes/DragPreviewIngredients.tscn")
 func _ready():
 	effects = globalVariable.ingredient_effects[ingredient_name]
 	$Texture.texture = texture
+
+func update_var(var name):
+	effects = globalVariable.Effects[name]
+	$Texture.texture = globalVariable.SPRITEINGR[name]
 
 func get_drag_data(position):
 	var data = {}
