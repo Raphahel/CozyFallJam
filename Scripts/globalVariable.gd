@@ -13,14 +13,6 @@ const maxAnxietyLevel := 100
 const walkVelocity = 200
 
 
-var obstacle_scenes = [
-	load("res://Scenes/treeStump.tscn"),
-	load("res://Scenes/rock.tscn"),
-	load("res://Scenes/bush.tscn"),
-]
-
-
-
 enum Effects {
 	HEALTH,
 	POISON,
