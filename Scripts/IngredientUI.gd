@@ -41,5 +41,8 @@ func get_drag_data(position):
 	var drag_preview = DRAGPREVIEWING.instance()
 	drag_preview.texture = $Texture.texture
 	$Texture/Modulate.visible = true
+
+	drag_preview.scale = Vector2(0.5, 0.5)
+	
 	add_child(drag_preview)
 	return data
