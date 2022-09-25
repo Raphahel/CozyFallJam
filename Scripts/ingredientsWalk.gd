@@ -1,4 +1,7 @@
-extends KinematicBody2D
+extends Node2D
+
+
+var ingredient_name : String
 
 
 # Called when the node enters the scene tree for the first time.
@@ -14,3 +17,14 @@ func _process(delta):
 		queue_free()
 
 	global_position.x += speed * delta
+
+
+func update_var(var name):
+	ingredient_name = name
+
+
+func _on_Area2D_body_entered(body):
+	print(body.name)
+	if body.name == "CharacterChat":
+		globalVariable.inventory[self.ingredient_name] += 1
+		queue_free()

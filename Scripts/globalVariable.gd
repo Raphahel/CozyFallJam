@@ -46,7 +46,7 @@ var ingredient_effects = {
 	"Snail" :              ["poison", "sleep"],
 	"Polka Dot Snail":     ["health", "strength"],
 	"Kilted Snail":        ["forgetfulness", "hydration"],
-	"Butterfly":           ["strength", "night vision"],
+	"Blood Butterfly":     ["strength", "night vision"],
 	"Blue Morpho":         ["sommeil", "hydration"],
 	"Bubblegum Butterfly": ["strength", "sommeil"],
 	"Nettle":              ["health", "hydration"],

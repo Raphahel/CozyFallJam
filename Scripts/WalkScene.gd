@@ -8,15 +8,15 @@ onready var obstacles = [
 
 
 onready var ingredients = {
-	"Blue Mushroom":       preload("res://Scenes/BlueMushroom.tscn"),
-	"Red Mushroom":        preload("res://Scenes/BloodMushroom.tscn"),
-	"Green Mushroom":      preload("res://Scenes/GreenMushroom.tscn"),
+	"Blue Mushroom":       preload("res://Scenes/Blue Mushroom.tscn"),
+	"Red Mushroom":        preload("res://Scenes/Red Mushroom.tscn"),
+	"Green Mushroom":      preload("res://Scenes/Green Mushroom.tscn"),
 	"Snail" :              preload("res://Scenes/Snail.tscn"),
-	"Polka Dot Snail":     preload("res://Scenes/PolkaDotSnail.tscn"),
-	"Kilted Snail":        preload("res://Scenes/KiltedSnail.tscn"),
-	"Blood Butterfly":     preload("res://Scenes/BloodButterfly.tscn"),
-	"Blue Morpho":         preload("res://Scenes/BlueButterfly.tscn"),
-	"Bubblegum Butterfly": preload("res://Scenes/PinkButterfly.tscn"),
+	"Polka Dot Snail":     preload("res://Scenes/Polka Dot Snail.tscn"),
+	"Kilted Snail":        preload("res://Scenes/Kilted Snail.tscn"),
+	"Blood Butterfly":     preload("res://Scenes/Blood Butterfly.tscn"),
+	"Blue Morpho":         preload("res://Scenes/Blue Morpho.tscn"),
+	"Bubblegum Butterfly": preload("res://Scenes/Bubblegum Butterfly.tscn"),
 	"Nettle":              preload("res://Scenes/Nettle.tscn"),
 	"Blueberry":           preload("res://Scenes/Blueberry.tscn"),
 	"Raspberry":           preload("res://Scenes/Raspberry.tscn"),
@@ -61,8 +61,7 @@ func addRandomIngredient():
 
 	# Intanciating the ingredient and setting its type
 	var ingredient = ingredients[ingredient_name].instance()
-	
-	print(ingredient)
+	ingredient.update_var(ingredient_name)
 
 	# Setting a position
 	var pos = Vector2(1920 + 250, rand_range(50, 1080 - 50))
@@ -70,7 +69,7 @@ func addRandomIngredient():
 
 	# Updating canvas
 	add_child(ingredient)
-	print("ADDED INGREDIENT")
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

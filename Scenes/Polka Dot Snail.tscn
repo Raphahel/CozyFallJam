@@ -1,18 +1,20 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Image/ortie.png" type="Texture" id=1]
+[ext_resource path="res://Image/escargot_pois.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ingredientsWalk.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 231, 266 )
+extents = Vector2( 164, 160 )
 
 [node name="KinematicBody2D" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.472222, 0.472222 )
+position = Vector2( 177, -397 )
+scale = Vector2( 0.383333, 0.383333 )
 texture = ExtResource( 1 )
+offset = Vector2( -461.739, 1035.65 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -53, 0 )
+position = Vector2( -52, -55 )
 shape = SubResource( 1 )
