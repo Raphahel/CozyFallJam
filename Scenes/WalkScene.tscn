@@ -29,7 +29,6 @@ radius = 78.0577
 extents = Vector2( 222.75, 540 )
 
 [node name="walk_scene" type="Node2D"]
-visible = false
 script = ExtResource( 2 )
 
 [node name="World edges (Kinematic)" type="KinematicBody2D" parent="."]

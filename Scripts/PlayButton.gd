@@ -18,3 +18,5 @@ func _ready():
 
 func _on_PlayButton_pressed():
 	$ButtonFall.play("bouton tombe")
+	yield(get_tree().create_timer(1), "timeout")
+	get_tree().change_scene("res://Scenes/WalkScene.tscn")

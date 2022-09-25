@@ -1,11 +1,11 @@
 extends Node2D
 
+
 onready var obstacles = [
 	preload("res://Scenes/TreeStump.tscn"),
 	preload("res://Scenes/rock.tscn"),
 	preload("res://Scenes/bush.tscn"),
 ]
-
 
 onready var ingredients = {
 	"Blue Mushroom":       preload("res://Scenes/Blue Mushroom.tscn"),
