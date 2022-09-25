@@ -50,7 +50,8 @@ func _ready():
 	$CanvasLayer.show()
 	$CanvasLayer/NinePatchRect/YesButton.show()
 	$CanvasLayer/NinePatchRect/NoButton.show()
-	
+	$Bell.play()
+	$Bell.stream.set_loop(false)
 
 
 func _on_YesButton_pressed():
