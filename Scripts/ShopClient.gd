@@ -56,7 +56,7 @@ func _ready():
 
 func _on_YesButton_pressed():
 	$CanvasLayer/NinePatchRect/Message.text = "Thank you ! Bye !"
-	globalVariable.money = globalVariable.money + 
+	globalVariable.money = globalVariable.money + final_price
 	$CanvasLayer/NinePatchRect/YesButton.hide()
 	$CanvasLayer/NinePatchRect/NoButton.hide()
 	$CanvasLayer/NinePatchRect/ByeButton.show()
