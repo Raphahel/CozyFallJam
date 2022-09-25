@@ -82,27 +82,27 @@ autoplay = true
 
 [node name="Snail" parent="." instance=ExtResource( 8 )]
 margin_left = 1605.0
-margin_top = 460.0
+margin_top = 465.0
 margin_right = 1605.0
-margin_bottom = 460.0
+margin_bottom = 465.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Snail"
 texture = ExtResource( 10 )
 
 [node name="PoklaDotSnailSlot" parent="." instance=ExtResource( 8 )]
-margin_left = 1748.0
-margin_top = 497.0
-margin_right = 1748.0
-margin_bottom = 497.0
+margin_left = 1823.0
+margin_top = 492.0
+margin_right = 1823.0
+margin_bottom = 492.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Polka Dot Snail"
 texture = ExtResource( 4 )
 
 [node name="KiltedSnailSlot" parent="." instance=ExtResource( 8 )]
-margin_left = 1658.0
-margin_top = 512.0
-margin_right = 1658.0
-margin_bottom = 512.0
+margin_left = 1692.0
+margin_top = 501.0
+margin_right = 1692.0
+margin_bottom = 501.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Kilted Snail"
 texture = ExtResource( 11 )
@@ -126,9 +126,9 @@ ingredient_name = "Raspberry"
 texture = ExtResource( 18 )
 
 [node name="BloodButterflySlot" parent="." instance=ExtResource( 8 )]
-margin_left = 1522.0
+margin_left = 1502.0
 margin_top = 488.0
-margin_right = 1522.0
+margin_right = 1502.0
 margin_bottom = 488.0
 rect_rotation = 30.0
 rect_scale = Vector2( 6, 6 )
@@ -156,28 +156,28 @@ ingredient_name = "Blue Morpho"
 texture = ExtResource( 14 )
 
 [node name="GreenMushroomSlot" parent="." instance=ExtResource( 8 )]
-margin_left = 1743.0
+margin_left = 1731.0
 margin_top = 952.0
-margin_right = 1743.0
+margin_right = 1731.0
 margin_bottom = 952.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Green Mushroom"
 texture = ExtResource( 9 )
 
 [node name="RedMushroomSlot" parent="." instance=ExtResource( 8 )]
-margin_left = 1523.0
+margin_left = 1514.0
 margin_top = 894.0
-margin_right = 1523.0
+margin_right = 1514.0
 margin_bottom = 894.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Red Mushroom"
 texture = ExtResource( 15 )
 
 [node name="BlueMushroomSlot" parent="." instance=ExtResource( 8 )]
-margin_left = 1633.0
-margin_top = 976.0
-margin_right = 1633.0
-margin_bottom = 976.0
+margin_left = 1603.0
+margin_top = 981.0
+margin_right = 1603.0
+margin_bottom = 981.0
 rect_scale = Vector2( 10, 10 )
 
 [node name="NettleSlot" parent="." instance=ExtResource( 8 )]
@@ -185,6 +185,6 @@ margin_left = 1618.0
 margin_top = 855.0
 margin_right = 1618.0
 margin_bottom = 855.0
-rect_scale = Vector2( 15, 15 )
+rect_scale = Vector2( 10, 10 )
 ingredient_name = "Nettle"
 texture = ExtResource( 16 )

@@ -37,3 +37,12 @@ expand = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
 visible = false
 shape = SubResource( 1 )
+
+[node name="Quantity" type="Label" parent="." index="2"]
+margin_left = -5.0
+margin_top = 6.0
+margin_right = 29.0
+margin_bottom = 20.0
+rect_scale = Vector2( 0.3, 0.3 )
+text = "5"
+align = 1

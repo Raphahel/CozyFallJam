@@ -3,6 +3,7 @@ extends Control
 var namesAlreadyPlaced = []
 
 var isSlot1used = false
+var isSlot2used = false
 
 var TargetData1 = {
 	"Name" : "",
@@ -28,7 +29,7 @@ func drop_data(position, data):
 		TargetData1["Texture"] = data["Texture"]
 		$slot1/Texture.texture = TargetData1["Texture"]
 		isSlot1used = true
-	else:
+	elif(!isSlot2used):
 		TargetData2["Name"] = data["Name"]
 		TargetData2["Effects"] = data["Effects"]
 		TargetData2["Texture"] = data["Texture"]
@@ -36,7 +37,8 @@ func drop_data(position, data):
 
 func _process(delta):
 	namesAlreadyPlaced = [TargetData1["Name"], TargetData2["Name"]]
-	if(Input.action_press("left_click") && TargetData1["Name"] != "none" && TargetData2["Name"] != "none"):
+	if(Input.action_press("left_click") && TargetData1["Name"] != "" && TargetData2["Name"] != ""):
+		print("isClicked")
 		var outputPotion = get_blend_effects(TargetData1["Effects"], TargetData2["Effects"])[0]
 		if(outputPotion != "bizzare"):
 			globalVariable.inventory[outputPotion] += 1
@@ -60,3 +62,7 @@ func get_blend_effects(var eff1, var eff2):
 
 
 
+
+
+func _on_CraftingSystem_gui_input(event):
+	pass # Replace with function body.
