@@ -92,3 +92,5 @@ var inventory = {
 	"Potion of Night Vision":  0,
 	"Potion of Hydration":     0,
 }
+
+var dropped_potion = ""

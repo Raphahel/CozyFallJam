@@ -14,6 +14,8 @@ func drop_data(position, data):
 	TargetData1["Effects"] = data["Effects"]
 	TargetData1["Texture"] = data["Texture"]
 	$Texture.texture = TargetData1["Texture"]
+	globalVariable.dropped_potion = TargetData1["Effects"]
+	
 
 
 

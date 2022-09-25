@@ -4,6 +4,7 @@ const NB_SPRITE = 5
 var first_name
 var dialogue
 var potion
+var effect = "None"
 var final_price
 var sprite
 var sprite_name
@@ -20,20 +21,28 @@ var liste_names = ["Alaric", "Edmond", "Bubulle", "Kestria", "Fleya", "Kassemir"
 func choose_dialogue():
 	if potion == 0 :
 		dialogue = liste_dial_health[randi()%4]
+		effect = "Health"
 	if potion == 1 :
 		dialogue = liste_dial_poison[randi()%4]
+		effect = "Poison"
 	if potion == 2 :
 		dialogue = liste_dial_strength[randi()%4]
+		effect = "Strength"
 	if potion == 3 :
 		dialogue = liste_dial_growth[randi()%4]
+		effect = "Growth"
 	if potion == 4 :
 		dialogue = liste_dial_sleep[randi()%4]
+		effect = "Sleep"
 	if potion == 5 :
 		dialogue = liste_dial_forgetfulness[randi()%3]
+		effect = "Forgetfulness"
 	if potion == 6 :
 		dialogue = liste_dial_night_vision[randi()%3]
+		effect = "Night Vision"
 	if potion == 7 :
 		dialogue = liste_dial_hydration[randi()%3]
+		effect = "Hydration"
 
 func _ready():
 	randomize()
@@ -55,15 +64,20 @@ func _ready():
 
 
 func _on_YesButton_pressed():
-	$CanvasLayer/NinePatchRect/Message.text = "Thank you ! Bye !"
-	globalVariable.money = globalVariable.money + final_price
-	$CanvasLayer/NinePatchRect/YesButton.hide()
-	$CanvasLayer/NinePatchRect/NoButton.hide()
-	$CanvasLayer/NinePatchRect/ByeButton.show()
-
+	var potion_name = "Potion of " + effect
+	if globalVariable.dropped_potion == effect && globalVariable.inventory[potion_name]>0:
+		$CanvasLayer/NinePatchRect/Message.text = "Thank you ! Bye !"
+		globalVariable.money = globalVariable.money + final_price
+		$CanvasLayer/NinePatchRect/YesButton.hide()
+		$CanvasLayer/NinePatchRect/NoButton.hide()
+		$CanvasLayer/NinePatchRect/ByeButton.show()
+	elif globalVariable.inventory[potion_name]==0:
+		$CanvasLayer/NinePatchRect/Message.text = "You don't have any " + potion_name
+	else:
+		$CanvasLayer/NinePatchRect/Message.text = "It's not the good potion, I asked for a " + potion_name
 
 func _on_NoButton_pressed():
-	$CanvasLayer/NinePatchRect/Message.text = "Alright... See you soon then !"
+	$CanvasLayer/NinePatchRect/Message.text = "Alright... Goodbye then !"
 	globalVariable.anxietyLevel = globalVariable.anxietyLevel + 10
 	$CanvasLayer/NinePatchRect/YesButton.hide()
 	$CanvasLayer/NinePatchRect/NoButton.hide()
