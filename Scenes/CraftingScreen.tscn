@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Image/decor_production.png" type="Texture" id=1]
 [ext_resource path="res://Ressources/FireAnimation.tres" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Image/sac_framb.png" type="Texture" id=18]
 [ext_resource path="res://Ressources/MainButton.tres" type="DynamicFont" id=19]
 [ext_resource path="res://Scripts/GoToShopButton.gd" type="Script" id=20]
+[ext_resource path="res://Scenes/ProgressBar.tscn" type="PackedScene" id=21]
 
 [node name="CraftingScreen" type="Control"]
 
@@ -224,6 +225,9 @@ margin_bottom = 855.0
 rect_scale = Vector2( 10, 10 )
 ingredient_name = "Nettle"
 texture = ExtResource( 16 )
+
+[node name="ProgressBar" parent="." instance=ExtResource( 21 )]
+position = Vector2( 0, -1 )
 
 [connection signal="button_down" from="ChangeSceneButton" to="ChangeSceneButton" method="_on_ChangeSceneButton_button_down"]
 [connection signal="gui_input" from="CraftingSystem" to="CraftingSystem" method="_on_CraftingSystem_gui_input"]
