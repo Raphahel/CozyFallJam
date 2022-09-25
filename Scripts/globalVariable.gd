@@ -40,18 +40,18 @@ const SPRITEINGR = {
 }
 
 var ingredient_effects = {
-	"Blue Mushroom":       ["growth", "night vision"],
-	"Red Mushroom":        ["poison", "forgetfulness"],
-	"Green Mushroom":      ["growth", "forgetfulness"],
-	"Snail" :              ["poison", "sleep"],
-	"Polka Dot Snail":     ["health", "strength"],
-	"Kilted Snail":        ["forgetfulness", "hydration"],
-	"Blood Butterfly":     ["strength", "night vision"],
-	"Blue Morpho":         ["sommeil", "hydration"],
-	"Bubblegum Butterfly": ["strength", "sommeil"],
-	"Nettle":              ["health", "hydration"],
-	"Blueberry":           ["health", "growth"],
-	"Raspberry":           ["poison", "night vision"],
+	"Blue Mushroom":       ["Growth", "Night Vision"],
+	"Red Mushroom":        ["Poison", "Forgetfulness"],
+	"Green Mushroom":      ["Growth", "Forgetfulness"],
+	"Snail" :              ["Poison", "Sleep"],
+	"Polka Dot Snail":     ["Health", "Strength"],
+	"Kilted Snail":        ["Forgetfulness", "Hydration"],
+	"Blood Butterfly":     ["Strength", "Night Vision"],
+	"Blue Morpho":         ["Sleep", "Hydration"],
+	"Bubblegum Butterfly": ["Strength", "Sleep"],
+	"Nettle":              ["Health", "Hydration"],
+	"Blueberry":           ["Health", "Growth"],
+	"Raspberry":           ["Poison", "Night Vision"],
 }
 
 
