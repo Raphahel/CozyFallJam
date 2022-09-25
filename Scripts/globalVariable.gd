@@ -4,7 +4,7 @@ extends Node
 var money = 0
 
 
-var anxietyLevel = 0
+var anxietyLevel = 100
 
 
 const maxAnxietyLevel := 100
