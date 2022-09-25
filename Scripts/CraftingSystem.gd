@@ -38,6 +38,7 @@ func _process(delta):
 	namesAlreadyPlaced = [TargetData1["Name"], TargetData2["Name"]]
 	if(Input.action_press("left_click") && TargetData1["Name"] != "none" && TargetData2["Name"] != "none"):
 		var outputPotion = get_blend_effects(TargetData1["Effects"], TargetData2["Effects"])
+		isSlot1used = false
 
 
 
