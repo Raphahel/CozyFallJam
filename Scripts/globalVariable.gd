@@ -25,18 +25,18 @@ enum Effects {
 }
 
 const SPRITEINGR = {
-	"Blue Mushroom":      "res://Image/champi_bleu.png",
-	"Red Mushroom":        "res://Image/champi_bleu.png",
-	"Green Mushroom":      "res://Image/champi_vert.png",
-	"Snail" :              "res://Image/escargot_marron.png",
-	"Polka Dot Snail":     "res://Image/escargot_pois.png",
-	"Kilted Snail":        "res://Image/escargot_kilt.png	",
-	"Blood Butterfly":     "res://Image/papillon_rouge.png",
-	"Blue Morpho":         "res://Image/papillon_bleu.png",
-	"Bubblegum Butterfly": "res://Image/papillon_rose.png",
-	"Nettle":              "res://Image/ortie.png",
-	"Blueberry":           "res://Image/myrtilles.png",
-	"Raspberry":           "res://Image/framboises.png",
+	"Blue Mushroom":       preload("res://Image/champi_bleu.png"),
+	"Red Mushroom":        preload("res://Image/champi_bleu.png"),
+	"Green Mushroom":      preload("res://Image/champi_vert.png"),
+	"Snail" :              preload("res://Image/escargot_marron.png"),
+	"Polka Dot Snail":     preload("res://Image/escargot_pois.png"),
+	"Kilted Snail":        preload("res://Image/escargot_kilt.png"),
+	"Blood Butterfly":     preload("res://Image/papillon_rouge.png"),
+	"Blue Morpho":         preload("res://Image/papillon_bleu.png"),
+	"Bubblegum Butterfly": preload("res://Image/papillon_rose.png"),
+	"Nettle":              preload("res://Image/ortie.png"),
+	"Blueberry":           preload("res://Image/myrtilles.png"),
+	"Raspberry":           preload("res://Image/framboises.png"),
 }
 
 var ingredient_effects = {
@@ -56,14 +56,14 @@ var ingredient_effects = {
 
 
 var Prices = [
-	10,  # Health
-	20,  # Poison
-	30,  # Strength
-	40,  # Growth
+	100,  # Health
+	60,  # Poison
+	70,  # Strength
+	80,  # Growth
 	50,  # Sleep
-	60,  # Forgetfulness
-	70,  # Night vision
-	80,  # Hydration
+	90,  # Forgetfulness
+	75,  # Night vision
+	50,  # Hydration
 ]
 
 
