@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Money.gd" type="Script" id=1]
+[ext_resource path="res://Image/decor_vente.png" type="Texture" id=2]
+[ext_resource path="res://Image/decor_production.png" type="Texture" id=3]
+[ext_resource path="res://Image/Money.png" type="Texture" id=4]
+[ext_resource path="res://Ressources/MoneyFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Image/BackgroundMoney.png" type="Texture" id=6]
+
+[node name="Money" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="DecorVente" type="Sprite" parent="."]
+position = Vector2( 965.78, 539.06 )
+scale = Vector2( 0.752, 0.744 )
+texture = ExtResource( 2 )
+
+[node name="DecorProduction" type="Sprite" parent="."]
+visible = false
+position = Vector2( 956.889, 542 )
+scale = Vector2( 0.752, 0.753 )
+texture = ExtResource( 3 )
+
+[node name="SpriteMoney" type="Sprite" parent="."]
+position = Vector2( 66, 84 )
+scale = Vector2( 0.167969, 0.164062 )
+texture = ExtResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+margin_left = 120.0
+margin_top = 30.0
+margin_right = 318.0
+margin_bottom = 110.0
+
+[node name="BackgroundMoney" type="Sprite" parent="CanvasLayer/NinePatchRect"]
+position = Vector2( 101, 41 )
+scale = Vector2( 0.201172, 0.20904 )
+texture = ExtResource( 6 )
+
+[node name="Money" type="Label" parent="CanvasLayer/NinePatchRect"]
+margin_left = 6.0
+margin_top = 10.0
+margin_right = 196.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 5 )
+align = 1
+valign = 1
